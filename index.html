@@ -1,0 +1,46 @@
+<!--the doctype declaration is not a tag, it is used for information to the browser about what doc type to expect-->
+<!DOCTYPE html>
+<!--html tag is container for all other HTML elements-->
+<!-- always recommended to used the lang attribute for search engines and browsers-->
+<html lang="en">
+    <!--head tag is container for metadata (title, style, script, link, meta, 
+        and base tags)-->
+    <!--placed in between html and body tag-->
+<head>
+    <title>Linden Crandall</title>
+    <!--link tag used to link css file-->
+    <!--rel means relationship, in this case to a stylesheet-->
+    <!--href means hypertext reference to connect to css file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--body tag contains all elements, there is only one body per html doc-->
+<body>
+        <!--div tags define a division or section in an HTML doc, used as a container for HTML elements css can easily style div tags using class or id attribute-->
+        <!--use id attribute tags when you have a single element on the page that will take a css style, IDs are unique (i.e. main-content, header, footer, left sidebar etc.)
+            id is the unique name of an item on a page-->
+        <!--each element can only have one ID-->
+        <div class = "navbar">
+            <div class = "navLinks">
+                <!--last tag is left-most on nav bar-->
+                <!--<img src="GitHub-Mark/PNG/GitHub-Mark-Light-64px.png">-->
+                <a href="https://github.com/Crandy9" target = "blank" title = "github"><img src="GitHub-Mark/PNG/GitHub-Mark-32px.png"></a>
+                <!--<a href = "https://github.com/Crandy9"> target="blank">github</a>-->
+                <a href = "#" target="blank">Contact</a>
+                <a href = "#" target="blank">About</a>
+            </div>
+        </div>
+
+            <!--use class attribute tag when you want to consistently style multiple elements thorughout page and site, used for when you have/will have
+                more than one element that shares the same style ex div of comments or a list for links-->
+            <!--classes are not unique, multiple classes can be used on the same element-->
+                    <!--Welcome message in English-->
+                <div class = "headingBackground">
+                    <h1>hello there</h1>
+                    <!--Welcome message in Japanese-->
+                    <h2>ようこそ</h2>
+                    <p id = "intro">Welcome to LindenCrandall.com</p>
+                    <p>This is my personal website and is currently under construction.... </p>
+                    <p>Enjoy the view and check out my github</p>
+                </div>
+</body>
+</html>
