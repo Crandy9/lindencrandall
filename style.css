@@ -30,6 +30,7 @@ h1 {
     -ms-animation: fadeIn ease 3s;
     position: relative;
     margin: auto;
+    padding-right: 60px;
     text-align: center;
     padding-top: 10px;
     color: rgb(255, 255, 255);
@@ -48,6 +49,7 @@ h2 {
     -ms-animation: fadeIn ease 3s;
     position: relative;
     margin: auto;
+    padding-right: 60px;
     text-align: center;
     padding-top: 10px;
     color: rgb(255, 255, 255);
