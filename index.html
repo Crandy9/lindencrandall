@@ -8,19 +8,45 @@
     <!--placed in between html and body tag-->
 <head>
     <title>Linden Crandall</title>
+        <script>
+            //displaying current time in 1 second intervals
+            function myFunc() {
+                var now = new Date();
+
+                var weekday=new Array(7);
+                weekday[0]="Monday";
+                weekday[1]="Tuesday";
+                weekday[2]="Wednesday";
+                weekday[3]="Thursday";
+                weekday[4]="Friday";
+                weekday[5]="Saturday";
+                weekday[6]="Sunday";
+
+                var x1 = weekday[now.getDay() - 1] + " " + (now.getMonth() + 1) + "/" + now.getFullYear();
+                x1 = x1 + " - " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+                document.getElementById("myTime").innerHTML = x1;
+                display_c();
+            }
+            function display_c() {
+                var refresh=1000; // Refresh rate in milli seconds
+                mytime = setTimeout('myFunc()',refresh); //current time in real time
+            }
+
+        </script>
     <!--link tag used to link css file-->
     <!--rel means relationship, in this case to a stylesheet-->
     <!--href means hypertext reference to connect to css file-->
     <link rel="stylesheet" href="style.css">
 </head>
 <!--body tag contains all elements, there is only one body per html doc-->
-<body>
+<body onload= myFunc();>
         <!--div tags define a division or section in an HTML doc, used as a container for HTML elements css can easily style div tags using class or id attribute-->
         <!--use id attribute tags when you have a single element on the page that will take a css style, IDs are unique (i.e. main-content, header, footer, left sidebar etc.)
             id is the unique name of an item on a page-->
         <!--each element can only have one ID-->
         <div class = "navbar">
             <div class = "navLinks">
+                <span id = "myTime"></span>
                 <!--last tag is left-most on nav bar-->
                 <!--<img src="GitHub-Mark/PNG/GitHub-Mark-Light-64px.png">-->
                 <a href="https://github.com/Crandy9" target = "blank" title = "github"><img src="GitHub-Mark/PNG/GitHub-Mark-32px.png"></a>

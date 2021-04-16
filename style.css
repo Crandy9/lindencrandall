@@ -2,7 +2,9 @@
 
 /*dot is a class selector*/
 body {
-  background: url("monterey.jpg");
+  background-image: url("monterey.jpg");
+  min-height: 100vh;
+  min-width: 100vw;
   max-width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -77,7 +79,7 @@ p {
   line-height: 1.2;
   font-family:gabriola;
 }
-
+/*. operator is id selector*/
 #intro {
   animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;
@@ -93,6 +95,11 @@ p {
   font-size: 25px;
   line-height: 1.2;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#myTime {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
 
 .navbar a {
