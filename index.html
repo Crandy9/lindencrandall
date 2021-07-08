@@ -1,4 +1,3 @@
-<!--the doctype declaration is not a tag, it is used for information to the browser about what doc type to expect-->
 <!DOCTYPE html>
 <!--html tag is container for all other HTML elements-->
 <!-- always recommended to used the lang attribute for search engines and browsers-->
@@ -41,18 +40,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <!--body tag contains all elements, there is only one body per html doc-->
-<body onload= myFunc();>
+<body onload= myFunc()>
         <!--div tags define a division or section in an HTML doc, used as a container for HTML elements css can easily style div tags using class or id attribute-->
         <!--use id attribute tags when you have a single element on the page that will take a css style, IDs are unique (i.e. main-content, header, footer, left sidebar etc.)
             id is the unique name of an item on a page-->
         <!--each element can only have one ID-->
         <div class = "navbar">
+            <span id = "myTime"></span>
+                <!--update date-->
+                <p style = "font-size: large; 
+                color: cornsilk;
+                margin-left:-90%;">Last updated: July 8, 2021
+                </p>
             <div class = "navLinks">
-                <span id = "myTime"></span>
                 <!--last tag is left-most on nav bar-->
                 <!--<img src="GitHub-Mark/PNG/GitHub-Mark-Light-64px.png">-->
                 <a href="https://github.com/Crandy9" target = "blank" title = "github"><img src="GitHub-Mark/PNG/GitHub-Mark-32px.png"></a>
-                <!--<a href = "https://github.com/Crandy9"> target="blank">github</a>-->
+                <a href = "projects.html"> Projects</a>
                 <a href = "#" target="blank">Contact</a>
                 <a href = "#" target="blank">About</a>
             </div>
@@ -66,9 +70,10 @@
                     <h1>hello</h1>
                     <!--Welcome message in Japanese-->
                     <h2>ようこそ</h2>
-                    <p id = "intro">Welcome to lindencrandall.com</p>
+                    <p id = "intro">Welcome to my website :)</p>
                     <p>This is my personal website and is currently under construction.... </p>
                     <p>Enjoy the view and check out my github</p>
+
                 </div>
 </body>
 </html>
