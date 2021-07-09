@@ -43,7 +43,7 @@ function init() {
     //renderer is what draws the scene
     renderer = new THREE.WebGLRenderer({canvas: canvas,antialias: true});
     //resizes output canvas. min size for project3 is 640x480
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.innerWidth /1.3, window.innerHeight / 1.3);
     //set background color
     renderer.setClearColor("black");
     document.body.appendChild(renderer.domElement);

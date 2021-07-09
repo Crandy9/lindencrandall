@@ -126,23 +126,20 @@ Notice the light only has 3 properties now -->
     <p>
         <a href= "index.html">Return to Homepage</a>
     </p>
-<h2>WebGL Demo</h2>
+<b>WebGL Demo</b>
 
 
 <noscript><hr><h3>This page requires Javascript and a web browser that supports WebGL</h3><hr></noscript>
 
 <p id="message" style="font-weight:bold">Drag your mouse on the model to rotate it.<br>
-(or just click animate and enjoy the show)</p>
+(or just click animate and enjoy the show) <label><input type="checkbox" id="animCheck" onchange="setAnimating(this.checked)">Animate</label>
+<button id="reset" style="margin-left:40px">Reset</button></p>
 
-<p>
-   <label><input type="checkbox" id="animCheck" onchange="setAnimating(this.checked)">Animate</label>
-   <button id="reset" style="margin-left:40px">Reset</button>
-</p>
 
 
 <div>
 
-    <canvas width=700 height=700 id="myCanvas" style="background-color:white"></canvas>
+    <canvas width= "1200" height=1000 id="myCanvas" style="background-color:white"></canvas>
 
 </div>
 </body>

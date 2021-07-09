@@ -157,7 +157,7 @@ function init() {
     rotator = new TrackballRotator(canvas,function() {
         if (!animating)
            draw();
-    },17,[0,1,2]); 
+    },20,[1,1,2]); 
     draw();
 }
 
