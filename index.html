@@ -6,6 +6,45 @@
         and base tags)-->
     <!--placed in between html and body tag-->
 <head>
+    <!--styling for project dropdown menu-->
+    <style>
+        /*hoverable button*/
+        .dropbtn {
+            background: rgba(0,0,0,0);
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+        /*position of button*/
+        .dropdown {
+            position:relative;
+            margin-top: 0.35%;
+            margin-left: 83.2%;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: none;
+            text-decoration:darkred;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #7cbdf3;}
+
+        .dropdown:hover .dropdown-content {display:block;}
+
+        .dropdown:hover .dropbtn {background-color: #7cbdf3;}
+    </style>
     <title>Linden Crandall</title>
         <script>
             //displaying current time in 1 second intervals
@@ -24,7 +63,6 @@
                 var x1 = weekday[now.getDay()] + ", " + (now.getMonth() + 1) + "/" + now.getDate() + 
                 "/" + now.getFullYear();
                 x1 = x1 + " - " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
-                console.log(today);
                 document.getElementById("myTime").innerHTML = x1;
                 display_c();
             }
@@ -34,13 +72,14 @@
             }
 
         </script>
+
     <!--link tag used to link css file-->
     <!--rel means relationship, in this case to a stylesheet-->
     <!--href means hypertext reference to connect to css file-->
     <link rel="stylesheet" href="style.css">
 </head>
 <!--body tag contains all elements, there is only one body per html doc-->
-<body onload= myFunc()>
+<body onload="myFunc()">
         <!--div tags define a division or section in an HTML doc, used as a container for HTML elements css can easily style div tags using class or id attribute-->
         <!--use id attribute tags when you have a single element on the page that will take a css style, IDs are unique (i.e. main-content, header, footer, left sidebar etc.)
             id is the unique name of an item on a page-->
@@ -53,12 +92,20 @@
                 margin-left:-90%;">Last updated: July 8, 2021
                 </p>
             <div class = "navLinks">
-                <!--last tag is left-most on nav bar-->
                 <!--<img src="GitHub-Mark/PNG/GitHub-Mark-Light-64px.png">-->
-                <a href="https://github.com/Crandy9" target = "blank" title = "github"><img src="GitHub-Mark/PNG/GitHub-Mark-32px.png"></a>
-                <a href = "projects.html"> Projects</a>
+                <a href="https://github.com/Crandy9" target = "blank" title = "github">
+                <img src="GitHub-Mark-32px.png"></a>
                 <a href = "#" target="blank">Contact</a>
-                <a href = "#" target="blank">About</a>
+                <!--last tag is left-most on nav bar-->
+                <a href = "#" target="blank" >About</a>
+                <!--dropdown menu for projects-->
+                <div class="dropdown">
+                    <button class="dropbtn">Projects</button>
+                    <div class="dropdown-content">
+                        <a href="threeDemo.html">Three.js Demo</a>
+                        <a href="webGL.html">WebGL Demo</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -74,6 +121,6 @@
                     <p>This is my personal website and is currently under construction.... </p>
                     <p>Enjoy the view and check out my github</p>
 
-                </div>
+                </div>       
 </body>
 </html>

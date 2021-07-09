@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Three.js Demo</title>
+</head>
+<body>
+    <p>
+        <a href= "index.html">Return to Homepage</a>
+    </p>
+    <!--adding radio buttons to switch lights on or off-->
+    <form>
+        <label style="margin-left: 90px">Use mouse or arrow keys to navigate scene
+            (left click and hold rotates, right click and hold repositions, mouse wheel zooms)</label>
+        <input style="margin-left: 210px" type="radio" 
+            name="OnOff" id="lightsOn" value = "Lights On">Lights On
+        <input style="margin-left: 10px" type="radio" 
+            name="OnOff" id="lightsOff" value = "Lights Off" checked>Lights Off
+    </form>
+    <!--JavaScript-->
+ <script src = "three.js"></script>
+ <script src = "OrbitControls.js"> </script>
+ <script src = "threejsdemo.js"> </script>
+</body>
+</html>
